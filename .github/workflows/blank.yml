@@ -11,3 +11,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  run-playbooks:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          token: ${{secrets.REPO_TOKEN}}
