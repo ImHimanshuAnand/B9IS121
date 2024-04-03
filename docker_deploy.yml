@@ -56,13 +56,15 @@
     - name: Create a directory to store the webpages
       file:
         path: /home/website
+        # path: /workspace
         state: directory
 
     - name: Create webpages into a folder
       copy:
         src: /workspaces/B9IS121_2324_TMD2/index.html
         dest: /home/website/index.html
-        # content: this is my content
+        # dest: /workspace/index.html
+        # content: this is my content2
 
     - name: Run Apache container
       docker_container:
@@ -74,7 +76,8 @@
           - "80:80"
         networks:
           - name: my_network
-        volumes: /workspace/:/usr/local/apache2/htdocs/
+        # volumes: /workspace/:/usr/local/apache2/htdocs/
+        volumes: /home/website/:/usr/local/apache2/htdocs/
 
 
 #    - name: Create index.html file

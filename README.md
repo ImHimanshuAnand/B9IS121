@@ -4,7 +4,12 @@ Network Systems and Administration
 # Purpose of the repo
 
 # Instructions
+This playbook was first tested and implemented on localhost (Ubuntu 22.04LTS WSL for Windows 10)
+secondly, it was implemented on Azure VM (for students plan)
+thirdly, it was improved using Bash script in Github Codespaces (To avoid installing Linux Machine for Control Node) 
 
+Step 1: Run Bash script with below command
+$ bash init.sh
 
 # References:
 - Learn Markdown syntax : https://www.markdownguide.org/cheat-sheet/
@@ -18,3 +23,5 @@ Network Systems and Administration
     - https://stackoverflow.com/questions/6207573/how-to-append-output-to-the-end-of-a-text-file
     - Append to Root Access File: https://superuser.com/questions/1217397/how-to-append-text-to-the-end-of-a-file-as-root-user
 - Ansible turn off Host key checking: https://stackoverflow.com/questions/23074412/how-to-set-host-key-checking-false-in-ansible-inventory-file
+
+- https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
