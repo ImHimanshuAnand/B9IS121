@@ -24,4 +24,5 @@ $ bash init.sh
     - Append to Root Access File: https://superuser.com/questions/1217397/how-to-append-text-to-the-end-of-a-file-as-root-user
 - Ansible turn off Host key checking: https://stackoverflow.com/questions/23074412/how-to-set-host-key-checking-false-in-ansible-inventory-file
 
-- https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
+- Ansible Playbook Docs: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
+- Undo Git Pull or Git Push: https://stackoverflow.com/questions/21437647/how-to-undo-git-pull-or-git-push
