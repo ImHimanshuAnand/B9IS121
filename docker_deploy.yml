@@ -1,0 +1,119 @@
+- hosts: myhosts
+  become: true
+
+  tasks:
+    - name: Install aptitude
+      apt:
+        name: aptitude
+        state: latest
+        update_cache: true
+
+    - name: Install required system packages
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools
+        state: latest
+        update_cache: true
+
+    - name: Add Docker GPG apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu jammy stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: true
+
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
+
+    - name: Pull Apache Docker Image
+      docker_image:
+       name: httpd:latest
+       source: pull
+
+    - name: Create Docker network
+      docker_network:
+        name: my_network
+        driver: bridge
+        ipam_config:
+          - subnet: 172.168.10.0/30
+
+    - name: Create a directory to store the webpages
+      file:
+        path: /home/website
+        state: directory
+
+    - name: Create webpages into a folder
+      copy:
+        src: /workspaces/B9IS121_2324_TMD2/index.html
+        dest: /home/website/index.html
+        # content: this is my content
+
+    - name: Run Apache container
+      docker_container:
+        name: apache_container
+        image: httpd:latest
+        state: started
+        detach: true
+        ports:
+          - "80:80"
+        networks:
+          - name: my_network
+        volumes: /workspace/:/usr/local/apache2/htdocs/
+
+
+#    - name: Create index.html file
+#      copy:
+#        content: "<!DOCTYPE html><html><head><title>Hello World (it works!!!!)</title></head><body><h1>Hello World</h1></body></html>"
+#        dest: /tmp/index.html
+
+#    - name: Copy index.html to Apache container
+#      copy:
+#        src: /tmp/index.html
+#        dest: /usr/local/apache2/htdocs/index.html
+#        container: my-apache-container
+
+#    - name: Verify Web Page
+#       hosts: localhost
+#       tasks:
+    - name: Verify "Hello World" webpage
+      uri:
+        url: 'http://51.107.15.82/'
+        method: GET
+#url: hv7460.switzerlandnorth.cloudapp.azure.com
+        return_content: yes
+#      register: result
+      register: webpage_content
+
+    - debug:
+#        msg: "{{ result.content }}"
+        msg: "{{ webpage_content.content }}"
+
+    - name: Get infos on network
+      docker_network_info:
+        name: my_network
+      register: result
+
+    - name: Does network exist?
+      debug:
+        msg: "The network {{ 'exists' if result.exists else 'does not exist' }}"
+
+    - name: Print information about network
+      debug:
+        var: result.network
+      when: result.exists
