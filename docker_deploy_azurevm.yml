@@ -73,13 +73,13 @@
 
     - name: Create a directory to store the webpages
       file:
-        path: /home/website
+        path: /workspace
         state: directory
 
     - name: Create webpages into a folder
       copy:
 #        src: /task9/index.html
-        dest: /home/website/index.html
+        dest: /workspace/index.html
         content: this is my content
 
 

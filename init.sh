@@ -49,6 +49,7 @@ ansible-playbook docker_deploy.yml
 # man ping
 # ping www.dictionary.com
 
-echo "----Requested content of index.html from Host server----"
-curl  http://hv7460.switzerlandnorth.cloudapp.azure.com
-echo -e "\n----Script End----"
+# echo "----Requested content of index.html from Host server----"
+# Implemented in Ansible Playbook so no need
+# curl  http://hv7460.switzerlandnorth.cloudapp.azure.com
+# echo -e "\n----Script End----"
