@@ -1,6 +1,9 @@
+# hosts: can have values as "localhost" or "myhosts" i.e. name of group from inventory file.
 - hosts: myhosts
+# become value is used to use command with sudo/root access.
   become: true
 
+# list of tasks to run
   tasks:
     - name: Install aptitude
       apt:

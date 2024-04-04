@@ -51,3 +51,6 @@ The below steps will guide you using the third way i.e. using github codespaces
 - Ansible turn off Host key checking: https://stackoverflow.com/questions/23074412/how-to-set-host-key-checking-false-in-ansible-inventory-file
 - Ansible Playbook Docs: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
 - Undo Git Pull or Git Push: https://stackoverflow.com/questions/21437647/how-to-undo-git-pull-or-git-push
+- https://stackoverflow.com/questions/66662462/copy-module-content-works-only-for-variables-and-src-only-for-files-how-to
+- https://stackoverflow.com/questions/66662462/copy-module-content-works-only-for-variables-and-src-only-for-files-how-to
+- https://askubuntu.com/questions/1227028/ping-specific-web-addresses
