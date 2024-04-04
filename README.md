@@ -8,11 +8,11 @@ thirdly, it was improved using Bash script in Github Codespaces (To avoid instal
 The below steps will guide you using the third way i.e. using github codespaces
 
 # STEPS: (For Ubuntu 20.04 LTS using Github Codespaces)
-1. Turn ON Azure VM (Ubuntu 22.04 LTS). (Azure for students offers limited free hours on cloud)
-2. In chrome browser, replace the part of this repository's URL of "github.com" with "github.dev", to open up codespaces.
-3. Connect codespaces and test terminal before proceeding with next step.
-4. Run bash script named init.sh
-5.  
+1. Create Azure VM (Ubuntu 22.04 LTS). (Azure for students offers limited free hours on cloud)
+2. Setup DNS name and Start VM
+3. Open Github Codespaces
+4. Run bash script
+5. Check web page in browser
 
 ## STEP 1: Create Azure VM
 ![screencapture-portal-azure-2024-04-05-00_08_02](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/3459eeb2-b663-433a-8804-c8d15e2b7c5a)
