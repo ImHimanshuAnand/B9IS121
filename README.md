@@ -35,7 +35,7 @@ The below steps will guide you using the third way i.e. using github codespaces
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/f3b68fc2-7074-477a-be48-a39d747aa9a4)
 ### 2. Using Domain name:
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/f3f226c0-abc5-4544-b718-534671f85b90)
-
+### Note: Last 4 Ansible tasks checks for Subnet and HTML webpage
 
 # References:
 - Learn Markdown syntax : https://www.markdownguide.org/cheat-sheet/
