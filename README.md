@@ -24,16 +24,16 @@ The below steps will guide you using the third way i.e. using github codespaces
 
 ## STEP 3: Open Codespaces
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/c7a9a50f-ec9e-4302-9dde-7c4039f1fde9)
-Press Continue working in codespaces and select 2GB and 16GB option
+### Press Continue working in codespaces and select 2GB and 16GB option
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/8dd5252f-4d35-42c9-b728-140a88ae6436)
 
 ## STEP 4: Run $ bash init.sh
 ![screencapture-fictional-space-eureka-7467v6pw7xqcr6qj-github-dev-2024-04-05-00_23_44](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/e0e19a9c-8a41-4e83-b939-9dbf051774c2)
 
 ## STEP 5: Check Webpage in Browser
-1. Using Public IP Address:
+### 1. Using Public IP Address:
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/f3b68fc2-7074-477a-be48-a39d747aa9a4)
-2. Using Domain name:
+### 2. Using Domain name:
 ![image](https://github.com/ImHimanshuAnand/B9IS121_2324_TMD2/assets/93127466/f3f226c0-abc5-4544-b718-534671f85b90)
 
 
