@@ -54,3 +54,4 @@ The below steps will guide you using the third way i.e. using github codespaces
 - https://stackoverflow.com/questions/66662462/copy-module-content-works-only-for-variables-and-src-only-for-files-how-to
 - https://stackoverflow.com/questions/66662462/copy-module-content-works-only-for-variables-and-src-only-for-files-how-to
 - https://askubuntu.com/questions/1227028/ping-specific-web-addresses
+- Ansible Modules List: https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
